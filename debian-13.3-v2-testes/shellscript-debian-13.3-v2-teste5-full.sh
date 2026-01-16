@@ -7,11 +7,7 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 echo "Instalando aplicativos..."
 sudo apt install curl git gtk2-engines-murrine flatpak libsass1 sassc vlc timeshift gnome-software-plugin-flatpak steam-devices -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.mattjakeman.ExtensionManager \
-#-y
-io.github.kolunmi.Bazaar com.rafaelmardojai.Blanket org.pulseaudio.pavucontrol io.github.diegopvlk.Dosage \
-com.heroicgameslauncher.hgl io.itch.itch md.obsidian.Obsidian io.github.kriptolix.Poliedros \
-org.prismlauncher.PrismLauncher com.spotify.Client com.valvesoftware.Steam com.stremio.Stremio app.zen_browser.zen -y
+flatpak install flathub com.mattjakeman.ExtensionManager io.github.kolunmi.Bazaar com.rafaelmardojai.Blanket org.pulseaudio.pavucontrol io.github.diegopvlk.Dosage com.heroicgameslauncher.hgl io.itch.itch md.obsidian.Obsidian io.github.kriptolix.Poliedros org.prismlauncher.PrismLauncher com.spotify.Client com.valvesoftware.Steam com.stremio.Stremio app.zen_browser.zen -y
 mkdir ~/shellscript
 wget -O ~/shellscript/vesktop.deb "https://vencord.dev/download/vesktop/amd64/deb"
 sudo dpkg -i ~/shellscript/vesktop.deb
